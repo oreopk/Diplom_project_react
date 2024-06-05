@@ -1,0 +1,134 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: -webkit-linear-gradient(
+    90deg,
+    #fff0fe,
+    #f0fcff,
+    #fafafa,
+    #fffeeb
+  );
+  background: linear-gradient(90deg, #fff0fe, #f0fcff, #fafafa, #fffeeb);
+}
+.btn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #91c9ff;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #4f95da;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+.prodtext {
+  width: 200px;
+}
+.btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+.products-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+}
+.count {
+  justify-self: flex-end;
+
+  text-align: center;
+  font-size: 24px;
+}
+h2 {
+  text-align: center;
+  font-size: 24px;
+}
+.load-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.product-grid {
+  width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+}
+
+.img-card {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+.container_img {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100%;
+}
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.btncard {
+  justify-self: end;
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btncard:hover {
+  background-color: #45a049;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagbtn {
+  padding: 10px 20px;
+  background-color: #008cba;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.pagbtn:hover {
+  background-color: #007a9b;
+}

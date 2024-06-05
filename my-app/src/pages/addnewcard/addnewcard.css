@@ -1,0 +1,83 @@
+.divnewcard {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.newname,
+.newprice {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.newbtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50; /* Зеленый цвет кнопки */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.newspan {
+  display: block;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.divnewcardmain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+
+  width: 20%;
+  height: 500px;
+}
+.newheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.contnew {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.divnewcard_p {
+  font-size: 30px;
+}
+.imgnewdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+.divnewimg {
+  display: block;
+  height: auto;
+  width: 10rem;
+  margin-top: 10px;
+}
+
+.divnewcard_p2 {
+  font-size: 24px;
+}
+
+.divnewbtn2 {
+  padding: 10px 10px;
+  font-size: 14px;
+  background-color: #f44336; /* Красный цвет кнопки */
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.newspan1 {
+  font-size: 20px;
+}
