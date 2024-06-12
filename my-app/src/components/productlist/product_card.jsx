@@ -8,13 +8,11 @@ export default function Productcard({ dataObj }) {
   const navigate = useNavigate();
   const handleAddToCart = () => {
     dispatch(addToCart(dataObj));
-
-    return;
   };
   const openCard = () => {
     navigate(`/product/${dataObj.id}`); // Перенаправляем на страницу товара с уникальным идентификатором
   };
-  console.log(dataObj);
+
   return (
     <div className="product-card">
       <div className="container_img">

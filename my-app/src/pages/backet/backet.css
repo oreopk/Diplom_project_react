@@ -67,3 +67,15 @@
 .btn_bucket:hover {
   background-color: #45a049;
 }
+.zakaz {
+  font-size: 24px;
+  text-align: center;
+  color: #45a049;
+  margin-left: 20px;
+}
+.zakaz2 {
+  font-size: 24px;
+  text-align: center;
+  color: #f23219;
+  margin-left: 20px;
+}

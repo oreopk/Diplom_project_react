@@ -6,9 +6,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
+import { loadState, saveState } from './localStorage'; // Функции для загрузки и сохранения состояния
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const persistedState = loadState(); // Загружаем состояние из localStorage
+
 const store = configureStore({
   reducer: rootReducer,
+  preloadedState: persistedState,
+});
+
+store.subscribe(() => {
+  saveState(store.getState()); // Сохраняем состояние в localStorage при каждом изменении
 });
 
 root.render(

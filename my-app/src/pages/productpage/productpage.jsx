@@ -6,10 +6,11 @@ const ProductPage = () => {
 
   const { cards } = useSelector((state) => state.cart);
   // Здесь вы можете использовать id для получения данных о товаре из вашего источника данных (например, базы данных или API)
-
+  console.log(cards);
   function getProductById(id) {
-    id = id - 1;
-    return cards[id];
+    const foundObject = cards.find((obj) => obj.id == id);
+
+    return foundObject;
   }
   // Предположим, что у вас есть функция getProductById, которая возвращает данные о товаре по его id
   const product = getProductById(id);

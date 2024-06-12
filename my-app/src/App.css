@@ -37,3 +37,69 @@ body {
     transform: rotate(360deg);
   }
 }
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.forms1 {
+  display: flex;
+  flex-direction: column;
+  width: 16%;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  height: auto;
+}
+
+.input1 {
+  width: 95%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+.forms1 {
+  button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+}
+.errors {
+  color: red; /* Farbe für die Fehlermeldung */
+  margin: 0px;
+}
+.blocklogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.titlereg {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.registrtrue {
+  color: green;
+}
+.registrfalse {
+  color: red;
+}

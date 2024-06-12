@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux';
 export default function SetData() {
   const [products, setProducts] = useState([]);
   const [productsPerPage, setProductsPerPage] = useState(8);
-
+  const { newcards } = useSelector((state) => state.cart);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -27,9 +27,12 @@ export default function SetData() {
           const dataArray = Array.isArray(data) ? data : [data];
 
           // Используем полученные данные (массив dataArray)
-          setProducts(dataArray);
-
-          handleAddCard2(dataArray);
+          const _ = require('lodash');
+          const newArray = _.cloneDeep(dataArray);
+          const filteredCards = newcards.filter((card) => card.status === true);
+          newArray.splice(newArray.length, 0, ...filteredCards);
+          setProducts(newArray);
+          handleAddCard2(newArray);
           console.error('Загрузка');
         })
         .catch((error) => {
